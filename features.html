@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://map.pokego.no">Map.PokeGo.no</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="buglist.html">Submit bug</a></li>
+                    <li><a href="features.html">Feature list</a></li>
+                    <li><a href="stats.html">Extendend statistics</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a target="_blank" href="https://twitter.com/PokeGoNow">Go to @PokeGoNow</a></li>
+                </ul>
+            </div>
+        </div><
+    </nav>
+<div class="container">
+  <h2>Features</h2>
+  <p>Below is a short list of upcoming features and their status. Tweet me @PokeGoNow your requests.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Solves problem:</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Server-side clustering</td>
+        <td>As number of markers grow, the file with all markers is getting over 10mb! this is not good for people on mobile network. So we need to cluster markers and send only markers info when they have zoomed into city-level</td>
+      <td bgcolor="green">Complete</td>
+      </tr>
+      <tr>
+        <td>Delete own marker</td>
+        <td>Sometimes people put markers in wrong place accidently. New feature should compare IP address of submitter vs IP of deleter, if match, delete.</td>
+        <td bgcolor="green">Complete</td>
+      </tr>
+       <tr>
+        <td>Vote markers</td>
+        <td>Ability to vote markers down and up. If a markers receives more than x downvotes, its removed from the system</td>
+         <td bgcolor="green">Complete</td>
+      </tr>
+   <tr>
+        <td>Client Side clustering optimalization</td>
+        <td>Too many clustered markers on client side causes browser to "lag" when zooming out and in, sometimes even crashes the browser. This is related to the <a target="_blank" href="https://github.com/googlemaps/js-marker-clusterer">MasterCluster</a> plugin, I have to make my own plugin now. I have an idea ;)</td>
+       <td bgcolor="orange">In process</td>
+      </tr>
+<tr>
+        <td>Pokemon sighting must have name</td>
+        <td>If a Pokemon sighting has been reported, it must have the name of the pokemon. And it shall appear on map with the relevant pokemons icon and not pikachu</td>
+       <td>To do</td>
+      </tr>
+<tr>
+        <td>Account to submit (@dork4201)</td>
+        <td>Let people with accounts add markers - Requested by twitter user. Admin notice: I am not sure, maybe if trolls keeps going at it. I really dont like the idea some other sites have, like FB or Gmail authentication. I wouldn't ever login with my fb on a Pokemon site. Maybe inhouse accounts that is only for my website.. we'll see.</td>
+       <td>Approval pending</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
