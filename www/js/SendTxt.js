@@ -269,6 +269,21 @@ var data = markers;
                 }
 }
 
+
+
+//        public static bool FBBoundingBoxContainsCoordinate(FBBoundingBox box, CLLocationCoordinate2D coordinate)
+//{
+//    bool containsX = box.x0 <= coordinate.Latitude && coordinate.Latitude <= box.xf;
+//    bool containsY = box.y0 <= coordinate.Longitude && coordinate.Longitude <= box.yf;
+//    return containsX && containsY;
+//}
+
+//bbox = []
+
+function BboxContainsCords(bbox, cords) {
+    var ContainsX = bbox[0]
+}
+
 function zoomChanged() {
     var currentzoom = nMap.getZoom();
     if (prev_zoom > currentzoom) {
