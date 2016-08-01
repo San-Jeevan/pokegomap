@@ -22,5 +22,8 @@ export const CONFIG = {
     position: 'relative', // Whether to render a shadow
   },
   gmAPIKey: 'API_KEY',
-  serverAPI: ['http://pokenodebiggy.cloudapp.net', 'http://pokenode2.cloudapp.net'],
+  serverAPI: function getAPIKey() {
+    let APIList = ['http://pokenodebiggy.cloudapp.net', 'http://pokenode2.cloudapp.net'];
+    return APIList[Math.floor(Math.random() * 2) + 1];
+  },
 };
